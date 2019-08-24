@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8" />
+    <title>Error_Page</title>
+</head>
+<body>
+    <h1 th:text="${msg}"></h1>
+    <span th:if="${msg} eq '暂无法找到用户，请重新登录'"><a href="turnLoginPage"></a></span>
+</body>
+</html>
